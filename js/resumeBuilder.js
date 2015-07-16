@@ -11,7 +11,7 @@ var bio = {
     "welcomeMessage": "Welcome to my page",
     "skills": ["Javascript", "CSS", "HTML", "DoubleClick", "Sizmek", "Programmatic"],
     "bioPic": "images/eleni.jpg"
-}
+};
 
 var education = {
     "schools": [{
@@ -25,8 +25,9 @@ var education = {
         "school": "Udacity",
         "dates": 2015,
         "url": "http://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
-    }]
-}
+    }
+    ]
+};
 
 var work = {
     "jobs": [{
@@ -39,15 +40,17 @@ var work = {
         "title": "Billing Specialist",
         "dates": "July 2012 - October 2013",
         "description": "Billing"
-    }]
-}
+    }
+    ]
+};
 
 var projects = {
     "projects": [{
         "title": "Sample Project 1",
         "dates": "2015",
         "description": "Online Resume"
-    }]
+    }
+    ]
 };
 
 var name = "Eleni Palmos";

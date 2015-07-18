@@ -9,7 +9,7 @@ var bio = {
         "location": "New York"
     },
     "welcomeMessage": "Welcome to my page",
-    "skills": ["Javascript", "CSS", "HTML", "DoubleClick", "Sizmek", "Programmatic", "Excel"],
+    "skills": ["Javascript", "CSS", "HTML", "DoubleClick", "Sizmek", "Programmatic"],
     "bioPic": "images/eleni.jpg"
 };
 

@@ -9,7 +9,7 @@ var bio = {
         "location": "New York"
     },
     "welcomeMessage": "Welcome to my page",
-    "skills": ["Javascript", "CSS", "HTML", "DoubleClick", "Sizmek", "Programmatic"],
+    "skills": ["Javascript", "CSS", "HTML", "DoubleClick", "Sizmek", "Programmatic", "Excel"],
     "bioPic": "images/eleni.jpg"
 };
 
@@ -63,17 +63,17 @@ var name = "Eleni Palmos";
 
 
 if (bio.skills.length > 0) {
+
     $("#header").append(HTMLskillsStart);
 
-    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-    $("#skills").append(formattedSkill);
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-    $("#skills").append(formattedSkill);
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-    $("#skills").append(formattedSkill);
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
-    $("#skills").append(formattedSkill);
-    formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
+    var formattedSkill = '';
+    var $skillList = $("#skills");
+
+    bio.skills.forEach(function(skill) {
+       formattedSkill = HTMLskills.replace("%data%", skill);
+       console.log (formattedSkill);
+       $skillList.append(formattedSkill);
+    });
 }
 
 for (job in work.jobs) {
@@ -92,7 +92,7 @@ for (job in work.jobs) {
     var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
     $(".work-entry:last").append(formattedDescription);
 
-    
+
     function inName(name) {
         name = name.trim().split(" ");
         console.log(name);

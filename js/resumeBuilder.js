@@ -63,7 +63,7 @@ displayProjects();
 function displayBio() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-    var formattedBioPic = HTMLbioPic.replace("%data%", bio.pic);
+    var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
     var formattedMessage = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
 
     $("#header").prepend(formattedRole);

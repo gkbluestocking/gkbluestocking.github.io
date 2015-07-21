@@ -63,11 +63,13 @@ displayProjects();
 function displayBio() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-    var formattedImage = HTMLbioPic.replace("%data%", bio.pic);
+    var formattedBioPic = HTMLbioPic.replace("%data%", bio.pic);
     var formattedMessage = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
 
     $("#header").prepend(formattedRole);
     $("#header").prepend(formattedName);
+    $("#header").append(formattedBioPic);
+    $("#header").append(formattedMessage);
 
     if (bio.skills.length > 0) {
 
@@ -84,6 +86,20 @@ function displayBio() {
     }
 }
 
+function displayContacts() {
+  for (contacts in contacts.header) {
+    var formattedMobile = $(HTMLmobile.replace("%data%", bio.contacts.mobile));
+    var formattedEmail = $(HTMLemail.replace("%data%", bio.contacts.email));
+    var formattedTwitter = $(HTMLtwitter.replace("%data%", bio.contacts.twitter));
+    var formattedGithub = $(HTMLgithub.replace("%data%", bio.contacts.github));
+
+        $("#topContacts").append(formattedMobile);
+        $("#topContacts").append(formattedEmail);
+        $("#topContacts").append(formattedGithub);
+        $("#topContacts").append(formattedLocation);
+}
+}
+
 function displayEducation() {
     for (school in education.schools) {
         $("#education").append(HTMLschoolStart);
@@ -91,11 +107,11 @@ function displayEducation() {
         var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
         var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
         var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-        var formattedSchoolHeader = formattedSchoolName + formattedDegree;
+        var formattedSchoolHeader = formattedName + formattedDegree;
 
         $("#education").append(HTMLschoolStart);
         $(".education-entry:last").append(formattedSchoolHeader);
-        $(".education-entry:last").append(formattedschoolDates);
+        $(".education-entry:last").append(formattedDates);
 
         if (education.schools[school].major.length > 0) {
             for (item in education.schools[school].major)

@@ -78,10 +78,20 @@ var work = {
         dates: "October 2013 - Present",
         description: "Billing"
     }, {
-        employer: "MediaMind",
+        employer: "Sizmek (MediaMind)",
         title: "Billing Specialist",
         dates: "July 2012 - October 2013",
         description: "Billing"
+    }, {
+        employer: "MediaMind",
+        title: "Office Manager",
+        dates: "May 2010 - June 2012",
+        description: "Office Manager"
+    }, {
+        employer: "Parsons The New School for Design",
+        title: "Dean's Office Executive Secretary",
+        dates: "September 2010 - May 2010",
+        description: "Event planning, design work, Commencement Committee"
     }]
 };
 
@@ -106,6 +116,10 @@ var projects = {
         title: "Project One: My Online Resume",
         dates: "2015",
         description: "The very resume you are reading here."
+    }, {
+        title: "Project Two: My Frogger Project",
+        dates: "2015",
+        description: "Ladybugs are my favorite and a fitting enemy in this project."
     }]
 };
 

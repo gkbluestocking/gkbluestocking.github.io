@@ -115,17 +115,19 @@ var projects = {
     projects: [{
         title: "Project One: My Online Resume",
         dates: "2015",
-        description: "The very resume you are reading here."
+        description: "The very resume you are reading here.",
+        url:
     }, {
         title: "Project Two: My Frogger Project",
-        dates: "2015",
-        description: "Ladybugs are my favorite and a fitting enemy in this project."
+        dates: "2016",
+        description: "Ladybugs are my favorite and no one is allowed to hit them."
     }]
 };
 
 projects.display = function() {
     for (project in projects.projects) {
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+         formattedTitle = formattedTitle.replace("%url%", projects.project[counter].projUrl);
         var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
         var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 

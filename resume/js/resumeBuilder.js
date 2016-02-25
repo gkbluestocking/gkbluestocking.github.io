@@ -1,6 +1,6 @@
 var bio = {
     name: "Eleni Palmos",
-    role: "About to be a Great Web Developer",
+    role: "Udacity FEND Student",
     contacts: {
         mobile: "+1.718.570.3200",
         email: "gkbluestocking@gmail.com",
@@ -76,22 +76,12 @@ var work = {
         employer: "LiveIntent",
         title: "Billing Manager",
         dates: "October 2013 - Present",
-        description: "Billing"
-    }, {
-        employer: "Sizmek (MediaMind)",
-        title: "Billing Specialist",
-        dates: "July 2012 - October 2013",
-        description: "Billing"
+        description: "A founding member of the startup's Accounting team. ERP selection team member. Troubleshooting of implementation. Costing research. Project research. Lessons learned. Work in NetSuite, QuickBooks, Excel (pivot tables, v-lookup and more) plus MySQL."
     }, {
         employer: "MediaMind",
-        title: "Office Manager",
-        dates: "May 2010 - June 2012",
-        description: "Office Manager"
-    }, {
-        employer: "Parsons The New School for Design",
-        title: "Dean's Office Executive Secretary",
-        dates: "September 2010 - May 2010",
-        description: "Event planning, design work, Commencement Committee"
+        title: "Billing Specialist",
+        dates: "July 2012 - October 2013",
+        description: "Issued monthly invoices for US company through SAP. Provided ad hoc reports to sales and clients. Worked in Qlikview. Daily use of Excel pivot tables and v-lookup. Coordinated with R&D to continually improve platform billing process. Knowledge retention of new products and their relation to invoicing."
     }]
 };
 
@@ -115,19 +105,17 @@ var projects = {
     projects: [{
         title: "Project One: My Online Resume",
         dates: "2015",
-        description: "The very resume you are reading here.",
-        url:
+        description: "The very resume you are reading here."
     }, {
-        title: "Project Two: My Frogger Project",
+        title: "Project Two: Frogger Game",
         dates: "2016",
-        description: "Ladybugs are my favorite and no one is allowed to hit them."
+        description: "."
     }]
 };
 
 projects.display = function() {
     for (project in projects.projects) {
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-         formattedTitle = formattedTitle.replace("%url%", projects.project[counter].projUrl);
         var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
         var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 
